@@ -1,0 +1,11 @@
+<p>app-sizer works!</p>
+ <div>
+    <h2>Resizeable Text</h2>
+    <button (click)="inc()">+</button>
+    <button (click)="dec()">-</button>
+    <label for="" [style.font-size.px]="size">Font-Size{{size}}</label>
+ </div>
+ <button routerLink="childA">child-A</button>
+ <button routerLink="childb">child-B</button>
+ <router-outlet></router-outlet>
+

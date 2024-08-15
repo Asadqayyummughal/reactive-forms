@@ -1,0 +1,51 @@
+<p>child-a works!</p>
+<form action="" [formGroup]="testform">
+    <input
+     type="text"
+     formControlName="name"
+     name="name"
+
+    >
+    <div *ngIf="name?.invalid&&(name?.dirty||name?.touched)">
+        <div *ngIf="name?.errors?.['minlength']">
+            <p>name is ateleat 4 chr logn</p>
+        </div>
+        <div *ngIf="name?.errors?.['required']">
+            <p>name is required</p>
+        </div>
+    </div>
+
+</form>
+
+<!-- <form action="">
+    <label for="">Enter your name</label>
+    <input 
+    type="text" 
+    ngModel 
+    name="name"
+    #name="ngModel" 
+    required 
+    minlength="5">
+    <div *ngIf="name.invalid&&(name.touched||name.dirty)">
+     <div *ngIf="name.errors?.['required']">
+        <p [style]="
+           {
+            color:'red',
+            fontSize:'8px'
+           }"> Name is required
+        </p>
+
+     </div>
+     <div *ngIf="name.errors?.['minlength']">
+        <p [style]="
+           {
+            color:'red',
+            fontSize:'8px'
+           }"> Name must be at least 5 characters long
+        </p>
+
+     </div>
+    </div>
+    <p>{{name.value }}</p>
+</form> -->
+

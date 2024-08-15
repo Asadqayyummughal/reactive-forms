@@ -1,0 +1,27 @@
+
+<h1>parent works!</h1>
+<div>
+  <h1>hosted div</h1>  
+<app-child
+(message_to_parent)="receiveMessage($event)" [childMesage]="'Hellow child(a parent message)'">
+<h2 question>Is this a ng-content</h2>
+<p answer>yes this is a ng-content</p>
+<div [ngClass]="isSpecial?'active':''">
+    <p [ngClass]="currentClasses">checkout demo of ng-class directive</p>
+</div>
+<div [ngStyle]="curentStyles">
+    check the demon of ng-style
+</div>
+<div *ngFor="let emp of employes;let i=index"> 
+    <p *ngIf="emp.name=='asad'">{{i}}-{{emp.name}}&nbsp; &nbsp;{{emp.ph}}</p>
+
+</div>
+<div [ngSwitch]="today">
+     <div *ngSwitchCase="'Monday'||'monday'"><p>Today is Monday</p></div>
+     <div *ngSwitchCase="'tuesday'||'Tuesday'"><p>Today is Tuesday</p></div>
+     <div *ngSwitchCase="'Thursday'||'thursday'"><p>Today is Thursday</p></div>
+     <div *ngSwitchDefault><p>not a week day</p> </div>
+</div>
+
+</app-child>
+</div>

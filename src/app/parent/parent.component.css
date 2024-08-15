@@ -1,0 +1,12 @@
+@import url('../../assets/external-style.css');
+:host{
+    border:2px solid green;
+}
+:host(.active){
+    color: blue;
+}
+.active{
+    color: blue;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}

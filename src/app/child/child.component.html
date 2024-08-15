@@ -1,0 +1,22 @@
+<h1>child works!</h1>
+<p style="color: green;">{{today|date:'EEEE MMMM d y'|uppercase}}</p>
+<p>{{name|greetings}}</p>
+<p [style]="
+{
+    color:'yellow',
+    fontSize:'15px',
+    backgroundColor:'green',
+    fontFamily:'verdana'
+}">Message from parent:{{childMesage}}</p>
+<img [src]="img_url" alt="" width="100px" height="100px">
+<button (click)="sendMessage()"
+  [class]="
+  {
+    classOne:false,
+    classTwo:true
+    
+  }">ClickMe</button>
+<ng-content [question]>
+</ng-content>
+<ng-content [answer]>
+</ng-content>

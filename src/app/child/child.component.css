@@ -1,0 +1,19 @@
+@import url('../../assets/external-style.css');
+:host{
+    border: 3px solid green;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: red;
+    padding: 10px;
+}
+.btn{
+    padding: 10px;
+    color: green;
+    border: 1px solid brown;
+}
+.classOne{
+    background-color: gold;
+    border-radius: 5px solid blac;
+}
+.classTwo{
+    color: green;
+}
